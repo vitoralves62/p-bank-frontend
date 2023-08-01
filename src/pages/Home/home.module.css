@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../../../public/fonts/Agrandir-TextBold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Agrandir-Regular';
+    src: url('../../../public/fonts/Agrandir-Regular.otf') format('opentype');
+}
+
+.Square {
+    width: 1366px;
+    height: 768px;
+    background-image: linear-gradient(to right, #5800ff 50%, #ffffFF 50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.logoPoli {
+    width: 200px;
+    position: fixed; 
+    top: 83%;
+    left: 85.3%;
+}
+
+.logoP {
+    width: 100px;
+    position: fixed; 
+    top: 5%;
+    left: 20%;
+}
+
+.Balance {
+    position: fixed;
+    top: 45%;
+    left: 12%;
+}
+
+.BalanceSquare {
+    width: 350px;
+    height: 100px;
+    background-color: #9B75FF;
+    border-radius: 15px;
+}
+
+.BalanceText {
+    position: relative;
+    font-family: 'Agrandir-Regular';
+    font-size: 25px;
+    line-height: 35px;
+    color: #fff;
+}
+
+.WelcomeText{
+    font-family: 'Agrandir-Regular';
+    color: #fff;
+    position: absolute;
+    top: 21.5%;
+    left: 14%;
+}
+
+.Hello {
+    font-size: 40px;
+    top: 50%;
+    left: 8.5%;
+}
+
+.HelloText {
+    font-size: 25px;
+    top: 20%;
+    left: 8.5%;
+}

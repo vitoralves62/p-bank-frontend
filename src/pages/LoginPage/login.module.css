@@ -1,0 +1,32 @@
+.whiteSquare {
+    width: 1000px;
+    height: 700px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+  
+.circle {
+  position: fixed;   
+  width: 1150px;
+  left: 0%;
+  bottom: -116%;  
+  transform: translate(-50%, -50%);
+}
+
+.PBankLogo {
+  width: 300px;
+  position: fixed; 
+  top: 16%;
+  left: 55%;
+}
+
+.logoPoli {
+  width: 120px;
+  position: fixed; 
+  top: -1%;
+  left: 87%;
+}

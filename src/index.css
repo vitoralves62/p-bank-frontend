@@ -1,13 +1,10 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@font-face {
+    font-family: 'Agrandir';
+    src:url('../public/fonts/Agrandir-GrandHeavy.otf') format('otf'),
+        url('../public/fonts/Agrandir-GrandLight.otf') format('otf'),
+        url('../public/fonts/Agrandir-Narrow.otf') format('otf'),
+        url('../public/fonts/Agrandir-Regular.otf') format('otf'),
+        url('../public/fonts/Agrandir-TextBold.otf') format('otf'),
+        url('../public/fonts/Agrandir-ThinItalic.otf') format('otf'),
+        url('../public/fonts/Agrandir-GrandHeavy.otf') format('otf')
+  }
