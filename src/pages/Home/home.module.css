@@ -7,40 +7,51 @@
     src: url('../../../public/fonts/Agrandir-Regular.otf') format('opentype');
 }
 
-.Square {
-    width: 1366px;
-    height: 768px;
-    background-image: linear-gradient(to right, #5800ff 50%, #ffffFF 50%);
+.PurpleSquare {
+    width: 40vw; /* 40% da largura da viewport */
+    height: 80vh;
+    background-color: #5800ff;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 32.5%;
     transform: translate(-50%, -50%);
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.WhiteSquare{
+    width: 40vw; /* 40% da largura da viewport */
+    height: 80vh;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 67.5%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px 20px 20px 0px;
 }
 
 .logoPoli {
-    width: 200px;
+    width: 11.5vw;
     position: fixed; 
-    top: 83%;
-    left: 85.3%;
+    top: 81.5%;
+    left: 71%;
 }
 
 .logoP {
-    width: 100px;
+    width: 6.7vw;
     position: fixed; 
-    top: 5%;
-    left: 20%;
+    top: 7vh; /* 5% da altura da viewport */
+    left: 15vw;
 }
 
 .Balance {
     position: fixed;
-    top: 45%;
-    left: 12%;
+    top: 45vh; /* 45% da altura da viewport */
+    left: 7.4vw;
 }
 
 .BalanceSquare {
-    width: 350px;
-    height: 100px;
+    width: 25vw; /* 25% da largura da viewport */
+    height: 13vh;
     background-color: #9B75FF;
     border-radius: 15px;
 }
@@ -56,19 +67,34 @@
 .WelcomeText{
     font-family: 'Agrandir-Regular';
     color: #fff;
-    position: absolute;
-    top: 21.5%;
-    left: 14%;
+}
+
+.HelloContainer{
+    display: flex;
+    flex-direction: column;
 }
 
 .Hello {
-    font-size: 40px;
-    top: 50%;
-    left: 8.5%;
-}
-
-.HelloText {
-    font-size: 25px;
-    top: 20%;
-    left: 8.5%;
+    font-size: 2.3vw;
+    position: absolute;
+    top: 21vh; /* 15% da altura da viewport */
+    left: 9.7vw;
+    word-wrap: break-word;
+    max-width: 500px;
+  }
+  
+  .HelloText {
+    font-size: 1.5vw;
+    position: absolute;
+    top: calc(19vh + 5vw); /* 15% da altura da viewport + 5% da largura da viewport */
+    left: 9.8vw;
+  }
+  
+.BalanceNumber{
+    font-family: 'Agrandir-Regular';
+    color: #fff;
+    font-size: 3.5vw;
+    position: absolute;
+    top: 6.2vh; /* 15% da altura da viewport + 5% da largura da viewport */
+    left: 4.7vw;
 }

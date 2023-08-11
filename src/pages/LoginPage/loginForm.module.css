@@ -1,24 +1,29 @@
 @font-face {
     font-family: 'Agrandir';
-    src: url('../../../public/fonts/Agrandir-TextBold.otf') format('opentype');
+    src: url('../../../public/fonts/Agrandir-Regular.otf') format('opentype');
   }
 
 .usericon {
-    width: 27px;
+    max-width: 1.5em;
+    max-height: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
     position: absolute;
-    top: 48px;
-    left: 80px;
-    transform: translate(-50%, -50%);
+    top: 8.5%;
+    left: 5%;
     pointer-events: none;
 }
 
 .passicon {
-    width: 25px;
+    max-width: 1.5em;
+    max-height: 1.8em;
+    width: 1.2em;
+    height: 1.5em;
     position: absolute;
-    top: 120px;
-    left: 80px;
-    transform: translate(-50%, -50%);
+    top: 47.5%;
+    left: 5.4%;
     pointer-events: none;
+    
 }
 
 .form {
@@ -26,27 +31,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    width: 450px;
-    margin: 0 auto;
+    margin: 0;
     color: #fff;
     position: absolute;
-    top: 55%;
+    top: 55.5%;
     left: 70%;
+    max-width: 50vw;
+    max-height: 25vh;
     transform: translate(-50%, -50%);
 }
   
 .form .email {
     font-family: 'Agrandir';
-    width: 350px;
-    height: 15px;
-    display: flex;
-    position: flex;
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    width: 50vw; /* 60% da largura da viewport */
+    max-width: 20vw; /* Largura máxima de 350px */
+    height: 2vh; /* 3% da altura da viewport */
+    max-height: 3.5vh;
+    display: absolute;
+    margin-bottom: 2vh; /* 2% da altura da viewport */
+    padding: 1.4em;
     background: #e6e6e6;
     border: 1px solid #e6e6e6;
     border-radius: 10px;
@@ -55,11 +58,13 @@
   
 .form .password {
     font-family: 'Agrandir';
-    width: 350px;
-    height: 15px;
-    display: flex;
-    margin: 15px auto;
-    padding: 20px;
+    width: 50vw; /* 60% da largura da viewport */
+    max-width: 20vw; /* Largura máxima de 350px */
+    height: 2vh; /* 3% da altura da viewport */
+    max-height: 2vh;
+    display: absolute;
+    margin-bottom: 2vh; /* 2% da altura da viewport */
+    padding: 1.4em;
     background: #e6e6e6;
     border: 1px solid #e6e6e6;
     border-radius: 10px;
@@ -69,18 +74,21 @@
 
 .form .loginButton {
     font-family: 'Agrandir';
-    width: 150px;
-    height: 40px;
+    max-width: 10vw;
+    width: 10vw;
+    max-height: 5.5vh;
+    height: 5vh;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(45deg, #5832ff, #9B75FF);
     border: 1px solid #e6e6e6;
     border-radius: 7px;
     font-size: 18px;
-    line-height: 20px;
+    align-items: center;
     padding: 10px;
     color: #fff;
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .loginButton:hover {
@@ -92,3 +100,11 @@
     text-decoration: none;
 }
 
+.errorMessage {
+    display: flex;
+    font-family: 'Agrandir';
+    color: red;
+    font-size: 14px;
+    margin-bottom: 8px;
+    
+  }

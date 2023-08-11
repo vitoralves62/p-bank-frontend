@@ -4,9 +4,10 @@ import circle from "../../assets/circle.png";
 import LoginForm from "./loginForm.js";
 import logoPBank from "../../assets/logoPbank.png";
 import logoPoli from "../../assets/logoPoli.png";
+import { useState } from "react";
 
 export default function LoginPage (){
-
+    const [authError, setAuthError] = useState(null);
     return(
         <main>
             <Background />
@@ -24,15 +25,14 @@ export default function LoginPage (){
                         src={circle}
                         alt="Circulo roxo com alguns paralelepipedos roxos arredondados"
                     />
-                </div>
-                    
+                </div>     
                 <div>
                     <img 
                         className={styles.PBankLogo}
                         src={logoPBank}
                         alt="Logo do P-bank"
                     />
-                    <LoginForm />
+                    <LoginForm authError={authError} setAuthError={setAuthError} />
                 </div>
             </div>
         </main>
