@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../../../public/fonts/Agrandir-TextBold.otf') format('opentype');
+}
+
+.WhiteSquare{
+    width: 40vw; /* 40% da largura da viewport */
+    height: 80vh;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.NotFoundText{
+    position: relative;
+    font-family: 'Agrandir-Regular';
+    color: #4e0370;
+}
+
+.Text{
+    position: fixed;
+    font-size: 50px;
+    top: 55%;
+    left: 26%;
+}
+
+.Number{
+    position: fixed;
+    font-size: 120px;
+    top: 35%;
+    left: 32.5%;
+}
+
+.ButtonContainer{
+    position: fixed;
+    top: 57%;
+    left: 34.5%;
+}

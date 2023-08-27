@@ -38,9 +38,12 @@ export default function HomePage() {
 
   const navigate = useNavigate();
 
+  const port = process.env.REACT_APP_BACKEND_PORT;
+  const rote = process.env.REACT_APP_BACKEND_ROTE;
+
   const getUserData = useCallback(async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/user/${id}`, {
+      const response = await fetch(`http://${rote}:${port}/user/${id}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

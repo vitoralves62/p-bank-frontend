@@ -1,0 +1,11 @@
+version: 'v2.5.1'
+services:
+  frontend:
+    build:
+      context: . 
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001" 
+    volumes:
+      - ./src:/usr/src/app
+    
