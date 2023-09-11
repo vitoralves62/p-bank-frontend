@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../../../public/fonts/Agrandir-TextBold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Agrandir-Regular';
+    src: url('../../../public/fonts/Agrandir-Regular.otf') format('opentype');
+}
+
+.BG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.PurpleSquare {
+    width: 40%;
+    height: 85%;
+    background-color: #5800ff;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.WhiteSquare{
+    width: 40%;
+    height: 85%;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.logoPoli {
+    width: 160px;
+    height: 120px;
+    position: absolute; 
+    top: 80.5%;
+    left: 71%;
+}
+
+.logoP {
+    width: 80px;
+    position: absolute; 
+    top: 8%;
+    left: 40%;
+}
+
+.BalanceContainer {
+    display: flex;
+}
+
+.BalanceSquare {
+    width: 300px;
+    height: 75px;
+    background-color: #bca2fd;
+    border-radius: 15px;
+    position: absolute;
+    top: 60%;
+    left: 22%;
+}
+
+.BalanceText {
+    position: relative;
+    font-family: 'Agrandir-Regular';
+    font-size: 25px;
+    line-height: 35px;
+    color: #fff;
+    position: absolute;
+    top: 53.5%;
+    left: 22%;
+}
+
+.BalanceNumber{
+    font-family: 'Agrandir-Regular';
+    color: #fff;
+    font-size: 48px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.WelcomeText{
+    font-family: 'Agrandir-Regular';
+    color: #fff;
+}
+
+.HelloContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.Hello {
+    font-size: 32px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    word-wrap: break-word;
+    max-width: 500px;
+  }
+  
+.HelloText {
+    font-size: 1.5vw;
+    position: absolute;
+    top: calc(25% + 10%);
+    left: 25%;
+  }
+  
+

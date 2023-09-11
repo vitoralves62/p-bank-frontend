@@ -1,0 +1,27 @@
+.BG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.PurpleSquare {
+    width: 20%;
+    height: 85%;
+    background-color: #5800ff;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.WhiteSquare{
+    width: 60%;
+    height: 85%;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0px 20px 20px 0px;
+}
