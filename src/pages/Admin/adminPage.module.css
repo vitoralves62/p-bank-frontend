@@ -1,4 +1,4 @@
-.BG{
+.BG {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,22 +6,98 @@
     width: 100vw;
 }
 
-.PurpleSquare {
-    width: 20%;
-    height: 85%;
-    background-color: #5800ff;
-    position: relative;
-    border-radius: 20px 0px 0px 20px;
+.Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
-nav ul{
-    list-style-type: none;
+.Row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
 }
 
-.WhiteSquare{
-    width: 60%;
-    height: 85%;
-    background-color: #fff;
-    position: relative;
-    border-radius: 0px 20px 20px 0px;
+.leftColumn{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #BA223B;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.rightColumn{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    margin: 0;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.leftColumn input {
+    background-color: #BA223B;
+    color: white;
+    border: #c38f97 2px solid ;
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+
+.leftColumn button {
+    background-color: #450a14;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.leftColumn button:hover {
+    background-color: #ed778b;
+}
+
+.leftColumn input::placeholder {
+    color: white;
+}
+
+.leftColumn label {
+    color: white;
+}
+
+.rightColumn input {
+    color: white;
+}
+
+.btn-secondary {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #BA223B;
+    border-color: #BA223B;
+    color: white;
+}
+
+.editIcon {
+    color: blue;
+    cursor: pointer;
+}
+
+.deleteIcon {
+    color: red;
+    cursor: pointer;
+}
+
+.logoArkadia {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50px;
 }

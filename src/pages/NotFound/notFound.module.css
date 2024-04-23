@@ -3,7 +3,7 @@
     src: url('../../../public/fonts/Agrandir-TextBold.otf') format('opentype');
 }
 
-<<<<<<< HEAD
+
 .BG{
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
     height: 85%;
     background-color: #fff;
     position: relative;
-=======
+
 .WhiteSquare{
     width: 40vw; /* 40% da largura da viewport */
     height: 80vh;
@@ -26,22 +26,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
->>>>>>> de0bacc21d84f31ae174e78599b887b5f76ed485
     border-radius: 20px 20px 20px 20px;
 }
 
 .NotFoundText{
-<<<<<<< HEAD
     display: flex;
-=======
     position: relative;
->>>>>>> de0bacc21d84f31ae174e78599b887b5f76ed485
     font-family: 'Agrandir-Regular';
     color: #4e0370;
 }
 
 .Text{
-<<<<<<< HEAD
     position: absolute;
     font-size: 50px;
     top: 55%;
@@ -54,7 +49,6 @@
     top: 30%;
     left: 25%;
 }
-=======
     position: fixed;
     font-size: 50px;
     top: 55%;
@@ -73,4 +67,3 @@
     top: 57%;
     left: 34.5%;
 }
->>>>>>> de0bacc21d84f31ae174e78599b887b5f76ed485
