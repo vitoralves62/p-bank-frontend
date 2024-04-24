@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { FaTrash } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Alert } from "react-bootstrap";
 import styles from "./adminPage.module.css";
 import Background from "../../components/Background/bg";
 import logoArkadia from "../../assets/Arkadia_Logo_Preto_e_Branco.png";
@@ -14,9 +14,17 @@ function AdminPage() {
   const [showEditModal, setShowEditModal] = useState(false);
   const [editName, setEditName] = useState("");
   const [editEmail, setEditEmail] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
 
   const onSubmit = (data) => {
-    setUsers([...users, data]);
+    const isExistingUser = users.some((user) => user.name === data.name);
+
+    if (isExistingUser) {
+      setShowAlert(true);
+    } else {
+      setUsers([...users, data]);
+      setShowAlert(false);
+    }
   };
 
   const handleDeleteUser = (index) => {
@@ -52,15 +60,15 @@ function AdminPage() {
             <div className={styles.leftColumn}>
               <img
                 src={logoArkadia}
-                alt="Ícone da Aplicação"  
-                className={styles.logoArkadia} 
+                alt="Ícone da Aplicação"
+                className={styles.logoArkadia}
               />
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="mb-3">
                   <label htmlFor="exampleInputName1" className="form-label">
                     Nome
                   </label>
-                  <br></br>
+                  <br />
                   <Controller
                     name="name"
                     control={control}
@@ -80,7 +88,7 @@ function AdminPage() {
                   <label htmlFor="exampleInputEmail1" className="form-label">
                     Endereço de e-mail
                   </label>
-                  <br></br>
+                  <br />
                   <Controller
                     name="email"
                     control={control}
@@ -91,7 +99,7 @@ function AdminPage() {
                         type="email"
                         className="form-control-lg"
                         id="exampleInputEmail1"
-                        placeholder="Digite o endereço de e-mail"
+                        placeholder="Digite o e-mail"
                       />
                     )}
                   />
@@ -100,15 +108,20 @@ function AdminPage() {
                   Criar
                 </button>
               </form>
+              {showAlert && (
+                <Alert variant="warning" className="mt-3">
+                  Este usuário já existe. Por favor, escolha outro nome.
+                </Alert>
+              )}
             </div>
             <div className={styles.rightColumn}>
               <h1>Usuários Criados</h1>
               <table className="table">
                 <thead>
                   <tr>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Ações</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Ações</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -142,7 +155,7 @@ function AdminPage() {
                               >
                                 Nome
                               </label>
-                              <br></br>
+                              <br />
                               <input
                                 type="text"
                                 className="form-control-lg"
@@ -159,7 +172,7 @@ function AdminPage() {
                               >
                                 Endereço de e-mail
                               </label>
-                              <br></br>
+                              <br />
                               <input
                                 type="email"
                                 className="form-control-lg"
